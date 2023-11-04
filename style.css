@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #006BBB;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.qr-title h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    padding: 10px 0px 3px 0px;
+}
+
+.qr-title h3::before {
+    content: "";
+    position: absolute;
+    background: #0000002b;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.qr-input-box {
+    padding: 10px 20px;
+}
+
+.qr-input-box label {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.qr-input-box input {
+    width: 100%;
+    outline: 0;
+    padding: 4px 3px 4px 3px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.qr-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 0;
+    transition: 0.3s;
+}
+
+.qr-image {
+    padding: 0px 20px;
+    margin-top: -30px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.qr-btn button {
+    background-color: #006BBB;
+    color: #fff;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.qr-btn {
+    margin-top: 10px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    position: absolute;
+    top: 10%;
+    left: -90%;
+    transition: 0.5s;
+}
+
+.message-card {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-left: 5px solid #5cdb5c;
+}
+
+.message-card span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
